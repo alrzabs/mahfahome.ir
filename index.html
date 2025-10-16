@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>مهفا</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       margin: 0;
       height: 100vh;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       background-color: #fff8f0;
@@ -19,9 +21,26 @@
       border-radius: 12px;
       box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
+    .social {
+      margin-top: 20px;
+    }
+    .social a {
+      color: #e1306c;
+      font-size: 32px;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+    }
+    .social a:hover {
+      transform: scale(1.2);
+    }
   </style>
 </head>
 <body>
   <img src="https://raw.githubusercontent.com/alrzabs/mahfahome.ir/main/logo.jpg" alt="لوگوی مهفا">
+  <div class="social">
+    <a href="https://www.instagram.com/mahfahome.ir" target="_blank" title="صفحه اینستاگرام مهفا">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
 </body>
 </html>
