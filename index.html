@@ -3,47 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <title>مهفا</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       margin: 0;
-      height: 100vh;
+      padding: 16px;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       background-color: #fff8f0;
       font-family: sans-serif;
+      box-sizing: border-box;
     }
-    img {
+
+    .logo {
       max-width: 90%;
       height: auto;
       border-radius: 12px;
       box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      margin-bottom: 32px;
     }
+
     .social {
-      margin-top: 24px;
+      display: flex;
+      gap: 24px;
+      margin-top: 0;
+      flex-wrap: wrap;
+      justify-content: center;
     }
+
     .social a {
       color: #e1306c;
       font-size: 48px;
       text-decoration: none;
       transition: transform 0.3s ease;
     }
+
     .social a:hover {
       transform: scale(1.2);
     }
+
     @media (max-width: 600px) {
       .social a {
         font-size: 56px;
+      }
+      .logo {
+        max-width: 100%;
+        margin-bottom: 40px;
       }
     }
   </style>
 </head>
 <body>
-  <img src="https://raw.githubusercontent.com/alrzabs/mahfahome.ir/main/logo.jpg" alt="لوگوی مهفا">
-  <br/>
-<div class="social">
+  <img class="logo" src="https://raw.githubusercontent.com/alrzabs/mahfahome.ir/main/logo.jpg" alt="لوگوی مهفا">
+  <div class="social">
     <a href="https://www.instagram.com/mahfaaa_style" target="_blank" title="صفحه اینستاگرام مهفا">
       <i class="fab fa-instagram fa-2xl"></i>
     </a>
